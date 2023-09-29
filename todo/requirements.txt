@@ -1,5 +1,0 @@
-# link/?name=Carter
-
-https://machinelearningprojects.net/words-counter-and-paragraphs-counter-flask-app-using-python/
-
-https://www.youtube.com/watch?v=0lI18eHU1U8
