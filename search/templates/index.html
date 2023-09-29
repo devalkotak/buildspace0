@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH</title>
+</head>
+<body>
+    <div>
+        <h1 style="color: black">
+            Sample Search Engine
+        </h1>
+    </div>
+
+    <div>
+        <form action="/search" method="POST">
+            <label> Enter Text* </label>
+            <br>
+            <textarea type="text" id="text" name='text' required></textarea>
+            <br>
+            <button type='submit'>SEARCH</button>
+
+            <!--{% if response %}-->
+            <p style="color: black">
+                {{ response }}
+            </p>
+            
+
+          <!--  {% endif %}-->
+        </form>
+    </div>
+</body>
+</html>

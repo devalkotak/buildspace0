@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div><h1>
+            REGISTER FORM
+    </h1></div>
+
+    <div>
+        <form action="/reg" method="POST">
+
+            <label>Enter Username</label>
+            <br>
+            <input type="text" id="username" name='username' required></input>
+            <br>
+            <label>Enter Password</label>
+            <br>
+            <input type="password" id="password" name='password' required></input>
+            <br>
+            <input type='submit'>Create Account</button>
+        </form>
+    </div>
+
+    </div>
+    {% endblock %}

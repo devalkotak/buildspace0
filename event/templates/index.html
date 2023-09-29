@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div><form action="/reg" method="POST">
+    <label for="name">Enter Name*</label>
+    <input type="text" autofocus placeholder="NAME" name="NAME" required> <br>
+    <select name="answer">
+        <option disabled selected>ANSWER</option>
+        {% for ans in ans %}
+            <option> {{ ans }}</option>
+        {% endfor %}
+        
+    </select>
+    <input type="submit" value="Register">
+</form></div>
+{% endblock %}

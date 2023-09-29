@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>DATA</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Answer</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name in list %}
+                <tr>
+                    <td>{{ name }}</td>
+                    <td>{{ list[name] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <div>
+        <a href="/">REGISTER AGAIN</a>
+    </div>
+{% endblock %}

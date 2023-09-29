@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div> <form action="/reg" method="POST">
+    <label for="name">Enter Task*</label>
+    <input type="text" autofocus placeholder="TASK NAME" name="task" required> <br>
+    <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <h4>
+        Tasks:
+    </h4>
+    <ol>
+        {% for item in list %}
+            <li>
+                {{item}}
+            </li>
+        {% endfor %}
+    </ol>
+    <form action="/rem" method="POST">
+        <input type="submit" value="Remove Last Task">
+    </form>
+
+
+</div>
+
+
+{% endblock %}
