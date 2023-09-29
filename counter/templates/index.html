@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            color: black;
+            margin-top: 30px;
+            padding: 5px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Word Counter</title>
+</head>
+<body>
+    <div>
+        <h1>
+            Word Counter
+        </h1>
+    </div>
+
+    <div>
+        
+    </div>
+
+    <div>
+        <form action="/count" method="POST">
+
+            <label><h4>ENTER TEXT</h4></label>
+            <br>
+            <textarea type="text" id="text" name='text' required></textarea>
+            <br>
+            <button type='submit'>COUNT</button>
+        </form>
+    </div>
+
+    <div>
+        {% if words %}
+        <p>
+            Words: {{ words }} <br>
+            Paragraphs: {{ paras }}<br>
+            Charceters: {{ chars }} <br>
+        </p>
+        {% endif %}
+    </div>
+</body>
+</html>
